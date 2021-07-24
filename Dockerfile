@@ -34,3 +34,4 @@ RUN apt install -y neovim
 
 # git
 RUN apt install -y git
+
