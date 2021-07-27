@@ -18,6 +18,7 @@
 |gem|3.1.2|
 |nvim|NVIM v0.4.3|
 |git|2.25.1|
+|man|2.9.1|
 
 ## Python3 modules
 |module|version|

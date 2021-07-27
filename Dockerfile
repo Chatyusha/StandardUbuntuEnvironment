@@ -8,7 +8,7 @@ ARG PASSWORD=TasteLikeAlmond
 
 RUN apt update && apt upgrade -y
 RUN yes | unminimize
-RUN apt install -y file sudo curl wget tzdata
+RUN apt install -y file sudo curl wget tzdata man
 
 ENV TZ Asia/Tokyo
 
