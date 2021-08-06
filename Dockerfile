@@ -1,6 +1,4 @@
-FROM ubuntu
-
-LABEL maintainer="Chatyusha hirounicat76@gmail.com"
+FROM ubuntu:latest
 
 ARG USERNAME=KCN
 ARG PASSWORD=TasteLikeAlmond
