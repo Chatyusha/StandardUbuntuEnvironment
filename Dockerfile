@@ -4,8 +4,8 @@ ARG USERNAME=KCN
 ARG PASSWORD=TasteLikeAlmond
 
 
-RUN apt update  
-RUN apt upgrade -y
+RUN apt-get update  
+RUN apt-get upgrade -y
 
 RUN yes | unminimize
 RUN apt install -y file sudo curl wget tzdata man
@@ -21,7 +21,8 @@ RUN apt install -y gcc clang
 
 # Python3
 RUN apt install -y python3 python3-venv python3-pip
-RUN pip3 install numpy pillow
+RUN pip3 install numpy
+RUN pip3 install pillow
 
 # Nodejs
 RUN apt install -y nodejs npm
