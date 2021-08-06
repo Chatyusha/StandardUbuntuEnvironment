@@ -21,7 +21,7 @@ RUN apt-get install -y gcc clang
 
 # Python3
 RUN apt-get install -y python3 python3-venv python3-pip
-RUN pip3 install numpy
+RUN pip3 install numpy pillow
 
 # Nodejs
 RUN apt-get install -y nodejs npm
