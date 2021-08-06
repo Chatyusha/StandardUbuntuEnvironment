@@ -27,4 +27,4 @@ jobs:
           docker buildx build \
             --push \
             --platform linux/arm/v7,linux/amd64 \
-            -t ${{ secret.DOCKER_USERNAME }}/standard-ubuntu-environment:latest .
+            -t ${{ secrets.DOCKER_USERNAME }}/standard-ubuntu-environment:latest .
