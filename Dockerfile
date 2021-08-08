@@ -35,3 +35,4 @@ RUN apt-get install -y neovim
 # git
 RUN apt-get install -y git
 
+CMD ["login"]
