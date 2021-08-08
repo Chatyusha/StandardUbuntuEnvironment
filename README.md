@@ -31,7 +31,7 @@
 |pynvim|0.4.1|
 |PyYAML|5.3.1|
 
-## Default Users
+## Users
 |name|password|sudo|
 |:-:|:-:|:-:|
 |KCN|TasteLikeAlmond|o|

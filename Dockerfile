@@ -2,6 +2,8 @@ FROM ubuntu:latest
 
 ARG USERNAME=KCN
 ARG PASSWORD=TasteLikeAlmond
+ARG UID=1000
+ARG GID=1000
 
 
 RUN apt-get update  
@@ -13,8 +15,8 @@ RUN apt-get install -y file sudo curl wget tzdata man
 ENV TZ Asia/Tokyo
 
 RUN useradd -m -s /bin/bash $USERNAME && \
-    gpasswd -a $USERNAME sudo && \
-    echo $USERNAME:$PASSWORD | chpasswd
+    echo "$USERNAME:$PASSWORD" | chpasswd && \
+    gpasswd -a $USERNAME sudo
 
 # C/C++ etc...
 RUN apt-get install -y gcc clang 
@@ -35,4 +37,4 @@ RUN apt-get install -y neovim
 # git
 RUN apt-get install -y git
 
-CMD ["login"]
+CMD login
