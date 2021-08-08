@@ -30,3 +30,8 @@
 |Pygments|2.3.1|
 |pynvim|0.4.1|
 |PyYAML|5.3.1|
+
+## Default Users
+|name|password|sudo|
+|:-:|:-:|:-:|
+|KCN|TasteLikeAlmond|o|
