@@ -29,4 +29,4 @@ jobs:
           docker buildx build \
             --push \
             --platform linux/arm64,linux/amd64 \
-            -t ${{ secrets.DOCKER_USERNAME }}/standard-ubuntu-environment:default/root .
+            -t ${{ secrets.DOCKER_USERNAME }}/standard-ubuntu-environment:default-root .
