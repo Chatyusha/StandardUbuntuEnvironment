@@ -1,9 +1,11 @@
 # StandardUbuntuEnvironment
 
-|branch|architecture|status|
+|tag|architecture|status|
 |:-:|:-:|:-:|
-|master|x86_64|![](https://github.com/Chatyusha/StandardUbuntuEnvironment/workflows/Publish%20Docker%20image/badge.svg)|
-|master|arm64|![](https://github.com/Chatyusha/StandardUbuntuEnvironment/workflows/Publish%20Docker%20image/badge.svg)|
+|latest|x86_64|![](https://github.com/Chatyusha/StandardUbuntuEnvironment/workflows/Publish%20Docker%20image/badge.svg)|
+|latest|arm64|![](https://github.com/Chatyusha/StandardUbuntuEnvironment/workflows/Publish%20Docker%20image/badge.svg)|
+|default/root|x86_64|![](https://github.com/Chatyusha/StandardUbuntuEnvironment/workflows/Publish%20Docker%20image/badge.svg?branch=default/root)|
+|default/root|arm64|![](https://github.com/Chatyusha/StandardUbuntuEnvironment/workflows/Publish%20Docker%20image/badge.svg?branch=default/root)|
 
 ## Packages
 
