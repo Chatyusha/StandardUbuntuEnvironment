@@ -1,5 +1,10 @@
 # StandardUbuntuEnvironment
 
+|branch|architecture|status|
+|:-:|:-:|:-:|
+|master|x86_64|![](https://github.com/Chatyusha/StandardUbuntuEnvironment/workflows/Publish%20Docker%20image/badge.svg)|
+|master|arm64|![](https://github.com/Chatyusha/StandardUbuntuEnvironment/workflows/Publish%20Docker%20image/badge.svg)|
+
 ## Packages
 
 |command|version|
