@@ -14,10 +14,6 @@ RUN apt-get install -y file sudo curl wget tzdata man
 
 ENV TZ Asia/Tokyo
 
-RUN useradd -m -s /bin/bash $USERNAME && \
-    echo "$USERNAME:$PASSWORD" | chpasswd && \
-    gpasswd -a $USERNAME sudo
-
 # C/C++ etc...
 RUN apt-get install -y gcc clang 
 
@@ -37,4 +33,3 @@ RUN apt-get install -y neovim
 # git
 RUN apt-get install -y git
 
-CMD login
