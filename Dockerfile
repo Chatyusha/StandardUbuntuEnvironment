@@ -5,6 +5,7 @@ ARG PASSWORD=TasteLikeAlmond
 ARG UID=1000
 ARG GID=1000
 
+SHELL ["/bin/bash", "-c"]
 
 RUN apt-get update  
 RUN apt-get upgrade -y
