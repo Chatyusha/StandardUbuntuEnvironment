@@ -5,8 +5,9 @@ ARG PASSWORD=TasteLikeAlmond
 ARG UID=1000
 ARG GID=1000
 
+ARG HOMEDIR=/home/$USERNAME
+
 SHELL ["/bin/bash", "-c"]
-USER KCN
 
 RUN apt-get update  
 RUN apt-get upgrade -y
@@ -39,10 +40,10 @@ RUN apt-get install -y neovim
 
 RUN mkdir -p ~/.config/nvim
 
-RUN echo "# neovim init" > ~/.config/nvim/init.vim
+RUN echo "# neovim init" > $HOMEDIR/.config/nvim/init.vim
 
 #Python3 Client
-RUN cd ~/.config/nvim && \
+RUN cd $HOMEDIR/.config/nvim && \
     python3 -m venv python3 && \
     source ./python3/bin/activate && \
     pip3 install wheel pynvim && \
