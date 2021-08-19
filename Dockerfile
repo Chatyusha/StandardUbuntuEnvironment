@@ -6,6 +6,7 @@ ARG UID=1000
 ARG GID=1000
 
 SHELL ["/bin/bash", "-c"]
+USER KCN
 
 RUN apt-get update  
 RUN apt-get upgrade -y
@@ -41,13 +42,12 @@ RUN mkdir -p ~/.config/nvim
 RUN echo "# neovim init" > ~/.config/nvim/init.vim
 
 #Python3 Client
-RUN cd ~/.config/nvim
-RUN python3 -m venv python3 && \
+RUN cd ~/.config/nvim && \
+    python3 -m venv python3 && \
     source ./python3/bin/activate && \
-    pip3 install pynvim && \
-    which python3
-    
-RUN echo "let g:python3_host_prog = $(pwd)/python3/bin/python"
+    pip3 install wheel pynvim && \
+    which python3 && \
+    echo "let g:python3_host_prog = $(pwd)/python3/bin/python"
 
 # git
 RUN apt-get install -y git
