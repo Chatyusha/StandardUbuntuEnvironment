@@ -7,6 +7,12 @@
 |default-root|x86_64|![](https://github.com/Chatyusha/StandardUbuntuEnvironment/workflows/Publish%20Docker%20image/badge.svg?branch=default-root)|
 |default-root|arm64|![](https://github.com/Chatyusha/StandardUbuntuEnvironment/workflows/Publish%20Docker%20image/badge.svg?branch=default-root)|
 
+# Usage
+
+Run `docker pull unicatflower/standard-ubuntu-environment:latest` , and `docker run -it unicatflower/standard-ubuntu-environment:latest`(User: KCN)
+
+If you use as `root` , use `unicatflower/standard-ubuntu-environment:default-root` image
+
 ## Packages
 
 |command|version|
