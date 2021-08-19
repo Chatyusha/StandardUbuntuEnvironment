@@ -35,7 +35,7 @@ RUN apt-get install -y ruby gem
 # Neovim
 RUN apt-get install -y neovim
 
-RUN mkdir ~/.config/nvim
+RUN mkdir -p ~/.config/nvim
 
 RUN echo "# neovim init" > ~/.config/nvim/init.vim
 
