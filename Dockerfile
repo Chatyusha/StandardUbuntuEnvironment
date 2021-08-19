@@ -44,7 +44,7 @@ RUN echo "# neovim init" > ~/.config/nvim/init.vim
 RUN cd ~/.config/nvim
 RUN python3 -m venv python3
 RUN source ./python3/bin/activate
-RUN pip3 install -y wheel pynvim
+RUN pip3 install pynvim
 RUN deactivate
 RUN echo "let g:python3_host_prog = $(pwd)/python3/bin/python"
 
