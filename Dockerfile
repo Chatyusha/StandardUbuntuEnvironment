@@ -40,12 +40,12 @@ RUN mkdir -p ~/.config/nvim
 RUN echo "# neovim init" > ~/.config/nvim/init.vim
 
 #Python3 Client
-RUN cd ~/.config/nvim && \
-    python3 -m venv python3 && \
-    source ./python3/bin/activate && \
-    pip3 install -y wheel pynvim && \
-    deactivate && \
-    echo "let g:python3_host_prog = $(pwd)/python3/bin/python"
+RUN cd ~/.config/nvim
+RUN python3 -m venv python3
+RUN source ./python3/bin/activate
+RUN pip3 install -y wheel pynvim
+RUN deactivate
+RUN echo "let g:python3_host_prog = $(pwd)/python3/bin/python"
 
 # git
 RUN apt-get install -y git
