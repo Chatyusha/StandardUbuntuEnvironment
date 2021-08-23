@@ -16,9 +16,8 @@ RUN apt-get install -y file sudo curl wget tzdata man
 ENV TZ Asia/Tokyo
 ENV XDG_CONFIG_HOME ~/.config
 
-RUN useradd -m -s /bin/bash $USERNAME && \
-    echo "$USERNAME:$PASSWORD" | chpasswd && \
-    gpasswd -a $USERNAME sudo
+RUN useradd -m --uid ${UID} --groups sudo ${USERNAME} && \
+    echo ${USERNAME}:${PASSWORD} | chpasswd
 
 # C/C++ etc...
 RUN apt-get install -y gcc clang 
