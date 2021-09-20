@@ -1,10 +1,4 @@
 FROM ubuntu:latest
-
-ARG USERNAME=KCN
-ARG PASSWORD=TasteLikeAlmond
-ARG UID=1000
-ARG GID=1000
-
 SHELL ["/bin/bash", "-c"]
 
 RUN apt-get update  
@@ -33,7 +27,6 @@ RUN apt-get install -y ruby gem
 RUN apt-get install -y neovim
 
 # Neovim User Setting
-USER KCN
 RUN mkdir -p ~/.config/nvim
 
 RUN echo "# neovim init" > ~/.config/nvim/init.vim
