@@ -49,5 +49,3 @@ RUN cd ~/.config/nvim && \
 # git
 USER root
 RUN apt-get install -y git
-
-CMD login
